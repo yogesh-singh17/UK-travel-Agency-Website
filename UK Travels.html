@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet"> -->
+    <style>
+        /* <style> */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url(himalayas.jpg);
+            /* font-family: 'Ubuntu', sans-serif; */
+            color: white;
+            font-family: 'Do Hyeon', sans-serif;
+            /* background-size: 2000px 1000px; */
+            /* background-position-x: -300px; */
+            background-position-y: -100px;
+            background-size: 100%;
+            /* height: 200px; */
+
+        }
+
+        .left {
+            position: absolute;
+            top: 0px;
+            /* border: 2px solid red; */
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            /* margin: auto; */
+            /* width: 100px; */
+            /* height: 60px; */
+
+            /* backgrouimage: url(travel.png); */
+        }
+
+        .left img {
+            /* height: 50px; */
+            width: 66px;
+        }
+
+
+        .mid {
+            /* border: 2px solid green; */
+            height: 70px;
+            width: 70%;
+            font-size: 24px;
+            /* position: relative; */
+            /* top: -110px; */
+            margin: 10px auto;
+            padding: 4px;
+            /* width: 70%; */
+            display: block;
+        }
+
+        .list li {
+            display: inline-block;
+            margin: auto;
+            /* text-decoration: none; */
+            list-style: none;
+        }
+
+        .list li a {
+            margin: 30px;
+            /* float: left; */
+            color: white;
+            text-decoration: none;
+        }
+
+        .list li a:hover {
+            color: rgb(95, 199, 240);
+        }
+
+        .right {
+            /* border:2px solid red; */
+            width: 10%;
+            /* height: 20px; */
+            position: absolute;
+            right: 10px;
+            top: 30px;
+            display: inline-block;
+        }
+
+        .btn {
+            font-family: inherit;
+            font-size: 18px;
+            width: 90px;
+            background-image: linear-gradient(rgb(101, 250, 250), rgb(237, 240, 107));
+            padding: 4px;
+            margin: 5px 10px;
+            border-radius: 20px;
+            /* margin: auto; */
+            /* display: inline-block; */
+        }
+
+        .btn:hover {
+            background-image: linear-gradient(rgb(75, 245, 52), rgb(124, 124, 245));
+        }
+
+        .cont {
+            border: 1px solid grey;
+            width: 50%;
+        }
+
+        .cont h1 {
+            text-align: center;
+            font-size: 25px;
+            color: rgb(137, 240, 171);
+        }
+        .details input{
+            background-color: rgba(175, 235, 250, 0.952);
+            font-family: inrgherit;
+            font-size: 18px;
+            text-align: center;
+            /* border:2px solid green; */
+            border-radius: 20px;
+            display: block;
+            padding: 4px;
+            width: 40%;
+            height: 30px;
+            margin:10px auto;
+        }
+        .cont button{
+            display: block;
+            width:100px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="travel.png">
+
+            <div>UK TRAVELS</div>
+        </div>
+        <nav class="mid">
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Hill Stations</a></li>
+                <li><a href="#">Our Packages</a></li>
+                <li><a href="#">Our Agents</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="right">
+            <button class="btn">
+                Call us
+            </button>
+        </div>
+    </header>
+
+    <div class="cont">
+        <h1>Make an Enquiry</h1>
+        <form action="no.php">
+            <div class="details">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="details"><input type="text" placeholder="Enter Your Mobile number"></div>
+            <div class="details"><input type="text" placeholder="Enter Your Email ID"></div>
+            <div class="details"><input type="text" placeholder="Enter Your City"></div>
+            <div class="details"><input type="text" placeholder="Enter Your Destination"></div>
+            <div class="details"><input type="text" placeholder="Enter Your Budget"></div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
